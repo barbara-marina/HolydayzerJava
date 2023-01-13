@@ -36,15 +36,19 @@ public class App {
                     System.out.println("Feriado: " + holydays.get(i).getName());
                     isHolyday = true;
                 }
+
             }
 
             if (!isHolyday) {
                 System.out.println("Essa data não é um Feriado!");
             }
+
         } else {
+
             for (int i = 0; i < holydays.size(); i++) {
                 System.out.println(holydays.get(i).getDate() + " - " + holydays.get(i).getName());
             }
+            
         }
     }
 }
